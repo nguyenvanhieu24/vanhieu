@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  height: 300vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+header {
+  height: 750px;
+}
+.Profile {
+  text-align: center;
+  border-radius: 8px;
+  
+}
+.hero{
+    position: relative;
+    width: 1500px;
+    height: 500px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-left: 70px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.Images {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+              
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 3s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+
+.Images img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 50px;
+}
+
+.icon a {
+  color: white;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  background: gray;
+  border-radius:50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 6px;
+}
+
+.icon a:hover {
+  color: black;
+} 
+
+.clear { 
+  clear: both
+}
+
+.container {
+   width: 1000px;
+   border: none;
+   padding: 10px;
+}
+
+#post {
+   width: 440px;
+   height: 300px;
+   background: whitesmoke;
+   float: left;
+   text-align: justify;
+   padding: 20px 20px 10px 20px;
+   font-size: 22px;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+}
+
+#sidebar {
+  width: 440px;
+  height: 300px;
+  background: #b1b1b1;
+  float: right;
+  text-align: justify; 
+  padding: 0 20px 10px 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.icon1 {
+  margin: 20px;
+}
+
+.icon1 a {
+  color: black;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.icon1 a:hover {
+  color: white;
+}
+
+.skills{
+  margin-left: 25%;
+  width: 700px;
+  padding: 0 20px;
+}
+
+.skill h1 {
+  margin: 100px 0 30px;
+}
+
+.skill :hover {
+  color: white;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.skill-bar{
+  height: 14px;
+  background: gray;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: black;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 6px 8px;
+  background: white;
+  border-radius: 4px;
+  font-size: 13px;
+  top: -45px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+#sidebar1 {
+  width: 660px;
+  height: 550px;
+  background: #b1b1b1;
+  float: right;
+  text-align: justify; 
+  padding: 0 20px 10px 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  margin: 100px 0;
+  border-radius: 10px;
+}
+
+#sidebar1 h2 {
+  text-align: center;
+  padding: 15px 20px 10px 20px;
+}
+
+#sidebar1 h2:hover{
+  color: white;
+}
+
+#sidebar1 ul p {
+  text-align: center;
+}
+
+.contact input{
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px ;
+  margin: 5px 0;
+}
+
+.contact button {
+  font-size: 22px;
+  margin: 10px 0 10px;
+  background: gray;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.contact h1:hover{
+  color: white;
+}
